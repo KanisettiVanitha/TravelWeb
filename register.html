@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: x-large;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            text-align: center;
+    
+        }
+        body{
+            background-image: url("registration.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 753px;
+        }
+        .register{
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            width:400px;
+            height: 350px;
+            margin: auto;
+            font-size: 20px;
+            border-radius: 15px;
+            /* background-color: lightgrey; */
+        }
+        .register button{
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 5px 10px;
+            margin-top: 20px;
+            background-color: rgb(9, 109, 142);
+        }
+        input{
+            margin-top: 20px;
+            font-size: 25px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+        }
+        .name-fields {
+            margin-top:0px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .name-fields input {
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+
+  body {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .register {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .name-fields {
+    flex-direction: column;       /* first name / last name on 2 lines */
+    gap: 0;
+  }
+
+  input {
+    font-size: 18px;
+  }
+
+  .register button {
+    font-size: 18px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <div class="register">
+        <form action="index.html" method="get">
+           <div class="name-fields">
+                <input type="text" id="fname" name="fname" placeholder="first name">
+                <input type="text" id="lname" name="lname" placeholder="last name">
+            </div><br>
+            <input type="email" id="email" name="email" placeholder="enter your email"><br>
+            <input type="password" id="password" name="password" placeholder="enter valid password"><br>
+            <input type="password" id="password" name="password" placeholder="confirm password"><br><br>
+            <button type="submit" value="Register" >Register</button>
+        </form>
+    </div>
+</body>
+</html>

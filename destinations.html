@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;     
+            
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+            /* margin-top: 50px; */
+            padding:50px;
+            background-color: rgb(146, 128, 106);
+            /* min-height: 810px; */
+            background-image: url("destination.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height:600px;
+        }
+        .dest1, .dest2, .dest3{
+            text-align: center;
+            width: 400px;
+            height: auto;
+            border: 2px solid black;
+            padding: 10px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            background-attachment: fixed;
+            background-color:white;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .dest1 p, .dest2 p, .dest3 p{
+            margin-top: 30px;
+            font-size: 25px;
+        }
+
+         .dest1 H3, .dest2 H3, .dest3 H3{
+            margin-top: 5px;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .dest1 img, .dest2 img, .dest3 img {
+        width: 400px;   
+        height:300px;  
+       }
+    .btn{
+          font-size: 30px;
+          /* border: 2px solid black; */
+          padding: 5px 10px;
+          /* background-color: lightgray; */
+          color: black;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          border-radius: 5px;
+        }
+        .bookbtn{
+            font-size: 20px;
+            padding: 10px 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+            background-color: rgb(9, 109, 142);
+        }
+        @media (max-width: 768px) {
+
+  .container {
+    flex-direction: column;       /* cards one below another */
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .dest1, .dest2, .dest3 {
+    width: 90%;                   /* full width on mobile */
+    margin-top: 10px;
+  }
+
+  .dest1 img, .dest2 img, .dest3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    position: static;             /* remove fixed top-left */
+    margin-bottom: 10px;
+  }
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <a href="index.html" class="btn">⬅ Back</a>
+    <div class="dest1">
+        <H3>MALDIVES</H3>
+        <img src="maldives.jpg" alt="" height="150px" width="150px">
+        <p>"The Maldives is a tropical paradise of turquoise waters, white sandy beaches, and vibrant coral reefs. Perfect for relaxing escapes, diving adventures, and unforgettable sunsets."</p>
+        <a href="contact.html">
+            <button type="submit" class="bookbtn">Book Travel</button>
+        </a>
+    </div>
+    <div class="dest2">
+        <H3>PARIS</H3>
+        <img src="paris.jpg" alt="" height="150px" width="150px">
+        <p>"Paris, the City of Light, is famous for its iconic landmarks like the Eiffel Tower, Louvre Museum, and charming streets. It’s a hub of art, culture, fashion, and unforgettable experiences." </p>
+        <a href="contact.html">
+            <button type="submit" class="bookbtn">Book Travel</button>
+        </a>
+    </div>
+    <div class="dest3">
+        <H3>AMERICA</H3>
+        <img src="america.jpg" alt="" height="150px" width="150px">
+        <p>"America, known as the United States, diverse country of vast landscapes, vibrant cities,rich cultural heritage. From the bustling streets of New York to wonders of national parks, it offers endless experiences for every traveler."</p>
+        <a href="contact.html">
+            <button type="submit" class="bookbtn">Book Travel</button>
+        </a>
+    </div>
+    </div>
+    
+</body>
+</html>

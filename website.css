@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 30px;
+  background-color: pink; 
+  font-size: larger;
+}
+
+.left, .right {
+  display: flex;
+  gap: 20px;
+  font-size:30px;
+}
+
+button {
+   background-color: violet;
+  padding: 6px 12px;
+    font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+ 
+.div2 {
+    position: relative;        
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;               
+    display: flex;
+    flex-direction: column;        /* stack H1, slogan vertically */
+    align-items: center;           /* center horizontally */
+    padding: 20px 50px;
+}
+
+/* Navigation menu on top right */
+.nav2 {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+.nav2 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.div2 h1 {
+    color: black;
+    font-size: 60px;
+    margin-top: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+/* Slogan below H1 */
+.slogan p {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+
+  /* Top bar: email / phone / buttons */
+  .topnav {
+    flex-direction: column;       /* stack left + right */
+    align-items: flex-start;
+    padding: 10px 15px;
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .left, .right {
+    font-size: 16px;
+    gap: 8px;
+    flex-wrap: wrap;              /* if long, they go to next line */
+  }
+
+  button {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  /* Hero section */
+  .div2 {
+    height: auto;                 /* let it grow with content */
+    padding: 80px 16px 40px;
+  }
+
+  .div2 h1 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+
+  .slogan p {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  /* Menu on top-right – keep same style but fit on phone */
+  .nav2 {
+    top: 10px;
+    right: 10px;
+  }
+
+  .nav2 ul {
+    gap: 10px;
+    flex-wrap: wrap;              /* items wrap instead of going out of screen */
+    justify-content: flex-end;
+  }
+
+  .nav2 a {
+    font-size: 14px;
+  }
+}
