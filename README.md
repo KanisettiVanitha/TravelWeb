@@ -1,0 +1,1 @@
+TravelWeb is a simple begginer friendly HTML project where u just download images from internet which are related to travelling and then make a website which will have user registration , user login.after login you will redirect to page where you can view the destinations and its deatials.select your go to destination and book your slots for your memorable trip
